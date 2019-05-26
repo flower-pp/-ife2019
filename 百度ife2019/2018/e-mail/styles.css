@@ -1,0 +1,14 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+#email-input{
+    position: absolute;
+    margin:0 auto;
+}

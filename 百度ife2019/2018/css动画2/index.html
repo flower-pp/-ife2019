@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="//ife.baidu.com/2018/asset/common/img/favicon_24c70cf.ico" type="image/x-icon">
+    <title>css动画2</title>
+    <style>
+        .container{
+            width:100%;
+            height:600px;
+            background: rgb(179,230,168);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div1,.div2,.div3,.div4,.div5{
+            width:15%;
+            height:15%;
+            flex:1;
+            background: rgb(238, 225, 34);
+            margin:20px;
+            transition: transform 1s;
+        }
+        .div1:hover{
+        /* 向右倾斜30度 */
+            transform: skew(30deg,0deg);
+        /* 向下倾斜30度 */
+            transform: skew(0deg,30deg);
+        }
+        .div2:hover{
+            /* 水平拉伸一半 */
+            transform: scale(0.5,1);
+            /* 竖直拉伸一半 */
+            /* 写两句，最后显示的是第二个方法 */
+             transform:scale(1,0.5); 
+        }
+        .div3:hover{
+            /* 顺时针旋转45度 */
+            transform: rotate(45deg);
+        }
+        .div4:hover{
+            transform:skew(30deg,0deg) scale(0.5,1) rotate(45deg);
+        }
+       .div5:hover{
+           /* 向右移5px,向下移10px */
+           transform:translate(5px,10px);
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+        </div>
+        <div class="div2">
+        </div>
+        <div class="div3">
+        </div>
+        <div class="div4">
+        </div>
+        <div class="div5">
+        </div>
+    </div>  
+</body>
+</html>
